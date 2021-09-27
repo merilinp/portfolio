@@ -6,48 +6,8 @@ body, html {
     color: #FFF;
 }
 
-/* BACK TO TOP BUTTON */                                        /*KADUNUD????????????!!?!?!?!?!?!?!*/
-#button {
-  display: inline-block;
-  background-color: #FD266E;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 60px;
-  right: 60px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-  text-decoration: none;
-}
+/* BACK TO TOP BUTTON */
 
-#button::before {
-  content: "\f106";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-
-#button:active {
-  background-color: #555;
-}
-
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
 
 /* NAVBAR */
 .navbar-nav {
