@@ -249,3 +249,70 @@ body, html {
 #contact i {
     margin-bottom: 100px;
 }
+
+
+/********** Large devices only **********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  #illustrations {
+    margin-left: 0;
+  }
+
+  #about img {
+    margin-left: 90px;
+  }
+}
+
+/********** Medium and smaller devices only **********/
+
+@media (max-width: 991px) {
+
+  /* PROJECTS */
+  #projects h2 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  #front-end {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+
+   #illustrations {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  #projects .projects {
+    padding-bottom: 0;
+  }
+
+  /* ABOUT */
+  #about h2, #about p {
+    text-align: center;
+  }
+
+  #about h2 {
+    padding-bottom: 30px;
+  }
+
+  #about p {
+    padding-top: 0;
+  }
+
+  #about img {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* CONTACT */
+  #contact h2, #contact p {
+    text-align: center;
+  }
+
+}
