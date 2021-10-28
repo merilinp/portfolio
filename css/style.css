@@ -63,6 +63,7 @@ body, html {
   left: 35%;
   transform: translate(-50%, -50%);
   color: #FFF;
+  margin-left: 5%;
 }
 
 .hero-text h1 {
@@ -92,9 +93,20 @@ body, html {
 	padding-bottom: 100px;
 }
 
+.org {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 80px;
+  padding: 7px 0;
+}
+
+.illustr {
+  padding: 22px 0;
+}
+
 /*front end*/
 #front-end {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6)), url("../images/front_end.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/front_end.png");
+    filter: grayscale(100%);
     width: 300px;
     height: 300px;
     background-size: cover;
@@ -111,7 +123,8 @@ body, html {
 /*graphic design*/
 #graphic-design {
     position: relative;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6)), url("../images/welcome.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/welcome.png");
+    filter: grayscale(100%);
     width: 300px;
     height: 300px;
     background-size: cover;
@@ -128,11 +141,12 @@ body, html {
 
 /*illustrations*/
 #illustrations {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6)), url("../images/illustrations.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/illustrations.jpg");
+    filter: grayscale(100%);
     width: 300px;
     height: 300px;
     background-size: cover;
-    padding-top: 135px;
+    padding-top: 120px;
     border-radius: 12px;
     text-align: center;
     margin-left: 50px;
@@ -232,6 +246,8 @@ body, html {
 
 #about img {
     margin-left: 190px;
+    width: 350px;
+    height: 350px;
 }
 
 /* CONTACT */
@@ -255,6 +271,10 @@ body, html {
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
+  .hero-text {
+    margin-left: 5%;
+  }
+  
   #illustrations {
     margin-left: 0;
   }
@@ -264,9 +284,13 @@ body, html {
   }
 }
 
-/********** Medium and smaller devices only **********/
+/********** Medium and smaller devices **********/
 
 @media (max-width: 991px) {
+
+  .hero-text {
+    margin-left: 5%;
+  }
 
   /* PROJECTS */
   #projects h2 {
@@ -278,6 +302,7 @@ body, html {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+    
   }
 
    #illustrations {
@@ -315,4 +340,25 @@ body, html {
     text-align: center;
   }
 
+}
+
+/********** XS devices only **********/
+
+@media (max-width: 575px) {
+
+  .hero-text {
+    margin-left: 15%;
+  }
+
+  #front-end, #graphic-design, #illustrations {
+    width: 250px;
+    height: 250px;
+    padding-top: 90px;
+  }
+
+  #about img {
+    width: 250px;
+    height: 250px;
+  }
+  
 }

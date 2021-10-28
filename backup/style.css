@@ -6,48 +6,8 @@ body, html {
     color: #FFF;
 }
 
-/* BACK TO TOP BUTTON */                                        /*KADUNUD????????????!!?!?!?!?!?!?!*/
-#button {
-  display: inline-block;
-  background-color: #FD266E;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 60px;
-  right: 60px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-  text-decoration: none;
-}
+/* BACK TO TOP BUTTON */
 
-#button::before {
-  content: "\f106";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-
-#button:active {
-  background-color: #555;
-}
-
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
 
 /* NAVBAR */
 .navbar-nav {
@@ -132,13 +92,10 @@ body, html {
 	padding-bottom: 100px;
 }
 
-#projects p {
-
-}
-
 /*front end*/
 #front-end {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6)), url("../images/front_end.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/front_end.png");
+    filter: grayscale(100%);
     width: 300px;
     height: 300px;
     background-size: cover;
@@ -149,11 +106,14 @@ body, html {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     box-shadow: 0 0 11px rgba(0,0,0,1);
+    text-shadow: 2px 2px 4px #1D1D1D;
 }
 
 /*graphic design*/
 #graphic-design {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6)), url("../images/welcome.png");
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/welcome.png");
+    filter: grayscale(100%);
     width: 300px;
     height: 300px;
     background-size: cover;
@@ -165,11 +125,13 @@ body, html {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     box-shadow: 0 0 11px rgba(0,0,0,1);
+    text-shadow: 2px 2px 4px #1D1D1D;
 }
 
 /*illustrations*/
 #illustrations {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6)), url("../images/illustrations.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/illustrations.jpg");
+    filter: grayscale(100%);
     width: 300px;
     height: 300px;
     background-size: cover;
@@ -181,6 +143,11 @@ body, html {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     box-shadow: 0 0 11px rgba(0,0,0,1);
+    text-shadow: 2px 2px 4px #1D1D1D;
+}
+
+.projects a {
+    color: #FFF;
 }
 
 /*hover*/
@@ -209,7 +176,43 @@ body, html {
   box-shadow: 0 0 11px rgba(0,0,0,1);
 }
 
+.projects a:hover {
+    text-decoration: none;
+}
 
+/*COMING SOON*/
+.soon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: Prompt, sans-serif;
+  font-size: 36px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+#front-end:hover .org {
+  opacity: 0;
+}
+#front-end:hover .soon {
+  opacity: 1;
+}
+
+#graphic-design:hover .org {
+  opacity: 0;
+}
+#graphic-design:hover .soon {
+  opacity: 1;
+}
+
+#illustrations:hover .org {
+  opacity: 0;
+}
+#illustrations:hover .soon {
+  opacity: 1;
+}
+
+/* projects end */
 #projects .projects {
 	padding-bottom: 50px;
 }
@@ -248,4 +251,86 @@ body, html {
 
 #contact i {
     margin-bottom: 100px;
+}
+
+
+/********** Large devices only **********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  #illustrations {
+    margin-left: 0;
+  }
+
+  #about img {
+    margin-left: 90px;
+  }
+}
+
+/********** Medium and smaller devices **********/
+
+@media (max-width: 991px) {
+
+  .hero-text {
+    margin-left: 5%;
+  }
+
+  /* PROJECTS */
+  #projects h2 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  #front-end {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    
+  }
+
+   #illustrations {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  #projects .projects {
+    padding-bottom: 0;
+  }
+
+  /* ABOUT */
+  #about h2, #about p {
+    text-align: center;
+  }
+
+  #about h2 {
+    padding-bottom: 30px;
+  }
+
+  #about p {
+    padding-top: 0;
+  }
+
+  #about img {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* CONTACT */
+  #contact h2, #contact p {
+    text-align: center;
+  }
+
+}
+
+/********** XS devices only **********/
+
+@media (max-width: 575px) {
+
+  .hero-text {
+    margin-left: 15%;
+  }
+
 }
