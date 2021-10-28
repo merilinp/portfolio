@@ -346,9 +346,17 @@ body, html {
 
 @media (max-width: 575px) {
 
+  #projects h2, #about h2, #contact h2 {
+    padding-top: 80px;
+  }
+  
+   /* HERO */
+
   .hero-text {
     margin-left: 15%;
   }
+
+   /* PROJECTS */
 
   #front-end, #graphic-design, #illustrations {
     width: 250px;
@@ -356,17 +364,21 @@ body, html {
     padding-top: 90px;
   }
 
+   /* ABOUT */
+
   #about img {
     width: 250px;
     height: 250px;
   }
 
+   /* CONTACT */
+
   #contact i {
     margin-bottom: 0px;
-}
+  }
 
-#contact p {
-  padding-bottom: 80px;
-}
+  #contact p {
+    padding-bottom: 80px;
+  }
   
 }
