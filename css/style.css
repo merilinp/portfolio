@@ -360,5 +360,13 @@ body, html {
     width: 250px;
     height: 250px;
   }
+
+  #contact i {
+    margin-bottom: 0px;
+}
+
+#contact p {
+  padding-bottom: 80px;
+}
   
 }
