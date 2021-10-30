@@ -1,0 +1,12 @@
+hero-text center ✅
+responsive images (projects & about)✅
+contact: mail icon ✅
+projektide värvi muutmine ✅
+back to top button
+collapsive navbar
+navbari liikumine sujuv
+kontakti vorm
+random lines?
+
+front end page:
+nool hoverides roosa

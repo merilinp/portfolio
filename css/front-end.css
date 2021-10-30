@@ -1,0 +1,93 @@
+body, html {
+    font-family: Prompt, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #FFF;
+    background-color: #1D1D1D;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #000;
+    height: 75px;
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+}
+
+.nav-link {
+    color: #FFF;
+    font-size: 1.3rem;
+
+}
+
+.nav-link:hover {
+    color: #FD266E;
+}
+
+.navbar p {
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+/* JAVASCRIPT BODY */
+
+h2 {
+    margin-top: 160px;
+    padding-bottom: 50px;
+    color: #FD266E;
+}
+
+.row {
+    margin-bottom: 50px;
+}
+
+#js img {
+    height: 200px;
+    width: 275px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 11px rgb(0, 0, 0);
+}
+
+#js h3 {
+    font-size: 28px;
+}
+
+
+/********** Large devices only **********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    
+    
+  }
+  
+  /********** Medium and smaller devices **********/
+  
+@media (max-width: 991px) {
+  
+
+  
+  }
+  
+  /********** XS devices only **********/
+  
+@media (max-width: 575px) {
+
+    .navbar {
+        height: 65px;
+    }
+  
+    .nav-link {
+        color: #FFF;
+        font-size: 1rem;
+        padding-top: 3px;
+    }
+    
+    .navbar p {
+        text-align: start;
+        font-size: 18px;
+        padding-top: 12px;
+    }
+    
+  }
