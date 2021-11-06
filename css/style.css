@@ -4,10 +4,46 @@ body, html {
     font-weight: 500;
     font-size: 22px;
     color: #FFF;
+    background-color: #1D1D1D;
 }
 
 /* BACK TO TOP BUTTON */
-
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
 
 /* NAVBAR */
 .navbar-nav {
@@ -83,11 +119,6 @@ body, html {
 }
 
 /* PROJECTS */
-#projects {
-	height: auto;
-	background: #1D1D1D;
-}
-
 #projects h2 {
 	color: #FD266E;
 	padding-top: 130px;
@@ -219,11 +250,6 @@ body, html {
 }
 
 /* ABOUT */
-#about {
-    height: auto;
-    background: #1D1D1D;
-}
-
 #about h2 {
     color: #FD266E;
     padding-top: 130px;
@@ -241,11 +267,6 @@ body, html {
 }
 
 /* CONTACT */
-#contact {
-    height: auto;
-    background: #1D1D1D;
-}
-
 #contact h2 {
     color: #FD266E;
     padding-top: 130px;
@@ -264,17 +285,35 @@ body, html {
   .hero-text {
     margin-left: 5%;
   }
+
+  #projects h2, #contact h2 {
+    padding-bottom: 50px;
+  }
+
+  #projects h2, #about h2, #contact h2 {
+    padding-top: 100px;
+  }
   
   /* PROJECTS */
 
-  #illustrations {
-    margin-left: 0;
+  #front-end, #graphic-design, #illustrations {
+    width: 250px;
+    height: 250px;
+    padding-top: 90px;
+    margin: 0 auto;
   }
 
   /* ABOUT */
 
+  #about h2 {
+    padding-bottom: 10px;
+  }
+
   #about img {
     margin-left: 90px;
+    margin-top: 40px;
+    width: 300px;
+    height: 300px;
   }
 }
 
