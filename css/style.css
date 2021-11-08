@@ -5,50 +5,15 @@ body, html {
     font-size: 22px;
     color: #FFF;
     background-color: #1D1D1D;
+    scroll-behavior: smooth
 }
 
 /* BACK TO TOP BUTTON */
-#button {
-  display: inline-block;
-  background-color: #FF9800;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-}
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
-}
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
+
 
 /* NAVBAR */
 .navbar-nav {
 	margin-top: 20px;
-	
 }
 
 .nav-link {
@@ -69,6 +34,27 @@ body, html {
 .con:hover {
 	color: #FFF;
 	background: #FD266E;
+}
+
+/* NAV BUTTON */
+
+.fa-bars {
+  color: #FD266E;
+  font-size: 1.5rem;
+  border: 3px solid #FD266E;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+.navbar-toggler:focus {
+  outline: 0;
+}
+
+/* NAV BUTTON OPEN */
+
+.navbar-collapse.collapsing {
+  text-align: center;
+  background-color: #060404;
 }
 
 /* NAVBAR SCROLLED */
@@ -253,15 +239,12 @@ body, html {
 #about h2 {
     color: #FD266E;
     padding-top: 130px;
-    padding-bottom: 60px;
-}
-
-#about p {
-    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
 #about img {
     margin-left: 190px;
+    margin-top: 10px;
     width: 350px;
     height: 350px;
 }
