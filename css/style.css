@@ -1,6 +1,6 @@
 body, html {
     height: 100%;
-    font-family: Prompt, sans-serif;
+    font-family: Quicksand, sans-serif;
     font-weight: 500;
     font-size: 22px;
     color: #FFF;
@@ -11,9 +11,10 @@ body, html {
 /* BACK TO TOP BUTTON */
 
 
-/* NAVBAR */
-.navbar-nav {
-	margin-top: 20px;
+/********** NAVBAR **********/
+.navbar {
+  background-color: #020202;
+  box-shadow: 0 0 15px rgba(0,0,0,0.8);
 }
 
 .nav-link {
@@ -28,7 +29,8 @@ body, html {
 .con {
 	border: solid #FD266E;
 	border-radius: 10px;
-	padding: 8px;
+	padding: 6px;
+  margin-top: 2px;
 }
 
 .con:hover {
@@ -47,7 +49,7 @@ body, html {
 }
 
 .navbar-toggler:focus {
-  outline: 0;
+  border: none;
 }
 
 /* NAV BUTTON OPEN */
@@ -58,19 +60,26 @@ body, html {
 }
 
 /* NAVBAR SCROLLED */
-.fixed-top.scrolled {
+/* .fixed-top.scrolled {
   background-color: #060404 !important;
   transition: background-color 200ms linear;
   height: 75px;
   padding-bottom: 30px;
   box-shadow: 0 0 20px rgba(0,0,0,1);
+} */
+
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 
-/* LANDING */
+/********** LANDING **********/
 /* The hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/landing.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/landing.jpg");
   height: 100%;
 
   background-position: center;
@@ -82,21 +91,22 @@ body, html {
 
 .hero-text {
   position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -25%);
   color: #FFF;
-  margin-left: 5%;
+  text-align: center;
 }
 
 .hero-text h1 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-size: 58px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
 }
 
 .hero-text p {
-	font-size: 25px;
+	font-size: 28px;
+  margin-bottom: 15%;
 }
 
 .hero-text mark {
@@ -104,72 +114,86 @@ body, html {
 	background: none;
 }
 
-/* PROJECTS */
+.bi-arrow-down-circle {
+  font-size: 2.4rem;
+  color: #FFF;
+}
+
+/********** PROJECTS **********/
 #projects h2 {
 	color: #FD266E;
+  text-transform: uppercase;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
 	padding-top: 130px;
-	padding-bottom: 100px;
+  text-align: center;
 }
 
-.org {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  height: 80px;
-  padding: 7px 0;
+#projects .joon {
+  background-color: #FFF;
+  border: solid 2px;
+  width: 55px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  border-radius: 10px;
 }
 
-.illustr {
-  padding: 22px 0;
+.hg {
+  height: 125px;
 }
 
-/*front end*/
-#front-end {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/front_end.jpg"); 
-    width: 300px;
-    height: 300px;
-    background-size: cover;
-    padding-top: 120px;
-    border-radius: 12px;
-    text-align: center;
-    letter-spacing: 2px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    box-shadow: 0 0 11px rgba(0,0,0,1);
-    text-shadow: 2px 2px 4px #1D1D1D;
+/*web development*/
+#web {
+    background-color: #6D676E;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: 0 auto;
 }
+
+.fa-code {transform: translate(27px, 33px);}
 
 /*graphic design*/
-#graphic-design {
-    position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/welcome.jpg");
-    width: 300px;
-    height: 300px;
-    background-size: cover;
-    padding-top: 120px;
-    border-radius: 12px;
-    text-align: center;
-    margin: 0 auto;
-    letter-spacing: 2px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    box-shadow: 0 0 11px rgba(0,0,0,1);
-    text-shadow: 2px 2px 4px #1D1D1D;
+#design {
+  background-color: #6D676E;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
+.fa-edit {transform: translate(35px, 30px);}
+
 /*illustrations*/
-#illustrations {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/illustrations.jpg");
-    width: 300px;
-    height: 300px;
-    background-size: cover;
-    padding-top: 120px;
-    border-radius: 12px;
-    text-align: center;
-    margin-left: 50px;
-    letter-spacing: 2px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    box-shadow: 0 0 11px rgba(0,0,0,1);
-    text-shadow: 2px 2px 4px #1D1D1D;
+#art {
+  background-color: #6D676E;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.fa-paint-brush {transform: translate(33px, 32px);}
+
+/*icons*/
+
+#web i, #art i {
+  font-size: 2.5rem;
+  text-align: center;
+  
+}
+
+#design i {font-size: 2.7rem; text-align: center;}
+
+/*text*/
+
+.org {
+  font-family: Bebas Neue, sans-serif;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 1px;
 }
 
 .projects a {
@@ -178,27 +202,12 @@ body, html {
 
 /*hover*/
 
-#front-end:hover {
-  -ms-transform: scale(1.05); /* IE 9 */
-  -webkit-transform: scale(1.05); /* Safari 3-8 */
-  transform: scale(1.05);
+#web:hover, #design:hover, #art:hover {
+  -ms-transform: scale(1.03); /* IE 9 */
+  -webkit-transform: scale(1.03); /* Safari 3-8 */
+  transform: scale(1.03);
   cursor: pointer;
-}
-
-#graphic-design:hover {
-  -ms-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  cursor: pointer;
-  box-shadow: 0 0 11px rgba(0,0,0,1);
-}
-
-#illustrations:hover {
-  -ms-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  cursor: pointer;
-  box-shadow: 0 0 11px rgba(0,0,0,1);
+  background-color: #FAA916;
 }
 
 .projects a:hover {
@@ -207,26 +216,22 @@ body, html {
 
 /*COMING SOON*/
 .soon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-family: Prompt, sans-serif;
-  font-size: 36px;
-  transform: translate(-50%, -50%);
+  font-family: Bebas Neue, sans-serif;
+  font-size: 28px;
   opacity: 0;
 }
 
-#graphic-design:hover .org {
+#design:hover .org {
   opacity: 0;
 }
-#graphic-design:hover .soon {
+#design:hover .soon {
   opacity: 1;
 }
 
-#illustrations:hover .org {
+#art:hover .org {
   opacity: 0;
 }
-#illustrations:hover .soon {
+#art:hover .soon {
   opacity: 1;
 }
 
@@ -235,39 +240,264 @@ body, html {
 	padding-bottom: 50px;
 }
 
-/* ABOUT */
+/********** ABOUT **********/
 #about h2 {
-    color: #FD266E;
-    padding-top: 130px;
-    padding-bottom: 30px;
+  color: #FD266E;
+  text-transform: uppercase;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 130px;
+}
+
+#about .joon {
+  background-color: #FFF;
+  border: solid 2px;
+  width: 55px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  border-radius: 10px;
+}
+
+#about p {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
 }
 
 #about img {
-    margin-left: 190px;
-    margin-top: 10px;
-    width: 350px;
-    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
 }
 
-/* CONTACT */
+/********** SKILLS **********/
+
+#skills h2 {
+  color: #FD266E;
+  text-transform: uppercase;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  padding-top: 130px;
+  text-align: center;
+}
+
+#skills .joon {
+  background-color: #FFF;
+  border: solid 2px;
+  width: 55px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  border-radius: 10px;
+}
+
+.skill-icons {
+  position: relative;
+  height: 350px;
+  color: #6D676E;
+}
+
+      /* html */
+      .fa-html5 {
+        position: absolute;
+        font-size: 5rem;
+        left: 25%;
+      }
+
+      /* css */
+      .fa-css3-alt {
+        position: absolute;
+        font-size: 5rem;
+        left: 42%;
+        top: 15%;
+      }
+
+      /* php */
+      .php {
+        position: absolute;
+        left: 10%;
+        top: 38%;
+        filter: invert(43%) sepia(7%) saturate(347%) hue-rotate(245deg) brightness(92%) contrast(87%);
+      }
+
+      /* javascript */
+      .fa-js {
+        position: absolute;
+        font-size: 4.5rem;
+        left: 44%;
+        top: 75%;
+      }
+
+      /* mysql */
+      .sql {
+        position: absolute;
+        left: 27%;
+        top: 52%;
+        filter: invert(43%) sepia(7%) saturate(347%) hue-rotate(245deg) brightness(92%) contrast(87%);
+      }
+
+      /* figma */
+      .fa-figma {
+        position: absolute;
+        font-size: 4.5rem;
+        left: 58%;
+        top: 50%;
+      }
+
+      /* canva */
+      .canva {
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        filter: invert(43%) sepia(7%) saturate(347%) hue-rotate(245deg) brightness(92%) contrast(87%);
+      }
+
+      /* affinity photo */
+      .aff-photo {
+        position: absolute;
+        right: 33%;
+        filter: invert(43%) sepia(7%) saturate(347%) hue-rotate(245deg) brightness(92%) contrast(87%);
+      }
+
+      /* affinity designer */
+      .aff-designer {
+        position: absolute;
+        right: 20%;
+        top: 57%;
+        filter: invert(43%) sepia(7%) saturate(347%) hue-rotate(245deg) brightness(92%) contrast(87%);
+      }
+
+.fa-html5:hover, .fa-css3-alt:hover, .fa-js:hover, .fa-figma:hover {
+  color: #FAA916;
+}
+
+.php:hover, .sql:hover, .canva:hover, .aff-photo:hover, .aff-designer:hover {
+  filter: invert(73%) sepia(40%) saturate(3054%) hue-rotate(349deg) brightness(104%) contrast(96%);
+}
+
+/********** CONTACT **********/
 #contact h2 {
-    color: #FD266E;
-    padding-top: 130px;
-    padding-bottom: 30px;
+  color: #FD266E;
+  text-transform: uppercase;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  padding-top: 130px;
+  text-align: center;
 }
 
-#contact i {
-    margin-bottom: 100px;
+#contact .joon {
+  background-color: #FFF;
+  border: solid 2px;
+  width: 55px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  border-radius: 10px;
 }
 
+form {
+  margin: 0 auto;
+  width: 55%;
+}
+
+#contact label {
+  margin-bottom: 5px;
+  
+}
+
+.name-mail input {
+  height: 45px;
+  background-color: #C4C4C4;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.sub input {height: 45px; margin-bottom: 20px;}
+.msg textarea {height: 200px;}
+
+.sub input, .msg textarea {
+  background-color: #C4C4C4;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* focus */
+
+.name-mail input:focus, .sub input:focus, .msg textarea:focus {
+  background-color: #C4C4C4;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #C4C4C4 inset !important;
+}
+
+input:-webkit-autofill{
+  -webkit-text-fill-color: #1D1D1D !important;
+}
+
+/* button */
+
+.btn {
+  background-color: #FD266E;
+  border-radius: 10px;
+  color: #FFF;
+  font-weight: 500;
+  padding: 5px 15px;
+  margin-top: 50px;
+}
+
+.btn:hover {
+  background-color: #FAA916;
+  color: #FFF;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+#btn-holder {
+  text-align: center;
+}
+
+/* icons */
+
+.contact-icons {
+  font-size: 2rem;
+  margin-top: 130px;
+  text-align: center;
+}
+
+.fa-github, .fa-linkedin-in {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #FFF;
+}
+
+.fa-github:hover, .fa-linkedin-in:hover {
+  color: #FAA916;
+}
+
+#page-end {
+  padding-top: 30px;
+}
 
 /********** Large devices only **********/
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
-  .hero-text {
-    margin-left: 5%;
-  }
 
   #projects h2, #contact h2 {
     padding-bottom: 50px;
@@ -276,15 +506,6 @@ body, html {
   #projects h2, #about h2, #contact h2 {
     padding-top: 100px;
   }
-  
-  /* PROJECTS */
-
-  #front-end, #graphic-design, #illustrations {
-    width: 250px;
-    height: 250px;
-    padding-top: 90px;
-    margin: 0 auto;
-  }
 
   /* ABOUT */
 
@@ -292,52 +513,50 @@ body, html {
     padding-bottom: 10px;
   }
 
-  #about img {
-    margin-left: 90px;
-    margin-top: 40px;
-    width: 300px;
-    height: 300px;
+  /* CONTACT */
+
+  form {
+    width: 70%;
   }
+
 }
 
-/********** Medium and smaller devices **********/
+/********** Medium devices **********/
 
 @media (max-width: 991px) {
 
+  #projects h2, #skills h2, #contact h2 {
+    padding-top: 80px;
+  }
+
+  #projects .joon, #skills .joon {
+    margin-bottom: 60px;
+  }
+
+  #about .joon, #contact .joon {
+    margin-bottom: 40px;
+  }
+  
+  /* HERO */
+
   .hero-text {
-    margin-left: 5%;
+    top: 40%;
   }
-
+  
   /* PROJECTS */
-  #projects h2 {
-    text-align: center;
-    padding-bottom: 30px;
-  }
-
-  #front-end {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    
-  }
-
-   #illustrations {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-  }
 
   #projects .projects {
     padding-bottom: 0;
   }
 
-  /* ABOUT */
-  #about h2, #about p {
-    text-align: center;
+  .hg {
+    margin-bottom: 100px;
   }
 
+  /* ABOUT */
+
   #about h2 {
-    padding-bottom: 30px;
+    padding-top: 40px;
   }
 
   #about p {
@@ -351,10 +570,150 @@ body, html {
     margin-right: auto;
   }
 
+  /* SKILLS */
+
+        /* html */
+        .fa-html5 {
+          font-size: 4rem;
+          left: 20%;
+        }
+
+        /* css */
+        .fa-css3-alt {
+          font-size: 4rem;
+          left: 40%;
+          top: 15%;
+        }
+
+        /* php */
+        .php {
+          left: 6%;
+          top: 30%;
+          height: 100px;
+        }
+
+        /* javascript */
+        .fa-js {
+          font-size: 3.7rem;
+          left: 47%;
+          top: 75%;
+        }
+
+        /* mysql */
+        .sql {
+          left: 24%;
+          top: 47%;
+          height: 105px;
+        }
+
+        /* figma */
+        .fa-figma {
+          font-size: 3.7rem;
+          left: 58%;
+          top: 40%;
+        }
+
+        /* canva */
+        .canva {
+          right: 4%;
+          top: 10%;
+          height: 85px;
+        }
+
+        /* affinity photo */
+        .aff-photo {
+          right: 28%;
+          height: 75px;
+        }
+
+        /* affinity designer */
+        .aff-designer {
+          right: 13%;
+          top: 55%;
+          height: 75px;
+        }
+
   /* CONTACT */
-  #contact h2, #contact p {
-    text-align: center;
+  
+  form {
+    width: 85%;
   }
+
+}
+
+/********** Small devices **********/
+
+@media (max-width: 767px) {
+
+  /* ABOUT */
+
+  #about img {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* SKILLS */
+
+        /* html */
+        .fa-html5 {
+          font-size: 3.5rem;
+          left: 18%;
+        }
+
+        /* css */
+        .fa-css3-alt {
+          font-size: 3.5rem;
+          left: 38%;
+          top: 17%;
+        }
+
+        /* php */
+        .php {
+          left: 0%;
+          top: 30%;
+          height: 90px;
+        }
+
+        /* javascript */
+        .fa-js {
+          font-size: 3.2rem;
+          left: 50%;
+          top: 72%;
+        }
+
+        /* mysql */
+        .sql {
+          left: 24%;
+          top: 45%;
+          height: 95px;
+        }
+
+        /* figma */
+        .fa-figma {
+          font-size: 3.2rem;
+          left: 60%;
+          top: 38%;
+        }
+
+        /* canva */
+        .canva {
+          right: 0%;
+          top: 10%;
+          height: 75px;
+        }
+
+        /* affinity photo */
+        .aff-photo {
+          right: 26%;
+          height: 65px;
+        }
+
+        /* affinity designer */
+        .aff-designer {
+          right: 10%;
+          top: 50%;
+          height: 65px;
+        }
 
 }
 
@@ -362,43 +721,134 @@ body, html {
 
 @media (max-width: 575px) {
 
-  #projects h2, #about h2, #contact h2 {
-    padding-top: 80px;
+  #projects h2, #about h2, #skills h2, #contact h2 {
+    font-size: 28px;
   }
   
    /* HERO */
 
-  .hero-text {
-    margin-left: 10%;
-  }
-
-  .hero-text h1 {
-    font-size: 40px;
-  }
+  .hero-text h1 {font-size: 40px;}
+  .hero-text p {font-size: 22px;}
+  .bi-arrow-down-circle {font-size: 2rem;}
 
    /* PROJECTS */
 
-  #front-end, #graphic-design, #illustrations {
-    width: 250px;
-    height: 250px;
-    padding-top: 90px;
+   #web, #design, #art {
+    width: 100px;
+    height: 100px;
   }
 
-   /* ABOUT */
+  #web i, #art i {font-size: 2rem;}
+  #design i {font-size: 2.2rem;}
+
+  .fa-code {transform: translate(22px, 29px);}
+  .fa-edit {transform: translate(28px, 26px);}
+  .fa-paint-brush {transform: translate(28px, 28px);}
+
+  .org {
+    font-size: 22px;
+  }
+
+   /* ABOUT */ 
+
+  #about p {
+    font-size: 18px;
+  }
 
   #about img {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
   }
+
+  /* SKILLS */
+
+  .skill-icons {
+    height: 1250px;
+  }
+
+        /* html */
+        .fa-html5 {
+          font-size: 5rem;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+
+        /* css */
+        .fa-css3-alt {
+          font-size: 5rem;
+          top: 12%;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+
+        /* php */
+        .php {
+          height: 115px;
+          top: 34%;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+
+        /* javascript */
+        .fa-js {
+          font-size: 4.5rem;
+          top: 24%;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+
+        /* mysql */
+        .sql {
+          height: 115px;
+          top: 43%;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+
+        /* figma */
+        .fa-figma {
+          font-size: 4.5rem;
+          top: 67%;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+
+        /* canva */
+        .canva {
+          height: 95px;
+          top: 55%;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+
+        /* affinity photo */
+        .aff-photo {
+          height: 95px;
+          top: 79%;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+
+        /* affinity designer */
+        .aff-designer {
+          height: 95px;
+          top: 92%;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
 
    /* CONTACT */
 
-  #contact i {
-    margin-bottom: 0px;
+  form {
+    width: 95%;
   }
 
-  #contact p {
-    padding-bottom: 80px;
+  form label {
+    font-size: 18px;
+  }
+
+  .contact-icons {
+    font-size: 1.6rem;
   }
   
 }

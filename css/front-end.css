@@ -1,5 +1,5 @@
 body, html {
-    font-family: Prompt, sans-serif;
+    font-family: Quicksand, sans-serif;
     font-weight: 500;
     font-size: 22px;
     color: #FFF;
@@ -10,14 +10,14 @@ body, html {
 
 .navbar {
     background-color: #000;
-    height: 75px;
-    box-shadow: 0 0 20px rgba(0,0,0,1);
+    height: 77px;
+    /* box-shadow: 0 0 20px rgba(0,0,0,1); */
 }
 
 .nav-link {
     color: #FFF;
-    font-size: 1.3rem;
-
+    font-size: 1.5rem;
+    margin-left: 30px;
 }
 
 .nav-link:hover {
@@ -25,13 +25,16 @@ body, html {
 }
 
 .navbar p {
-    padding-top: 20px;
+    padding-top: 22px;
     margin-left: 20px;
 }
 
 /* JAVASCRIPT BODY */
 
 h2 {
+    text-transform: uppercase;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
     margin-top: 160px;
     padding-bottom: 50px;
     color: #FD266E;
@@ -50,21 +53,36 @@ h2 {
 }
 
 #js h3 {
-    font-size: 28px;
+    font-family: Bebas Neue, sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
 }
 
+#js p {
+    width: 500px;
+}
+
+#js h3, #js p {
+    margin-left: 5%;
+}
 
 /********** Large devices only **********/
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
-    
+    #js h3, #js p {
+        margin-left: 15%;
+    }
     
   }
   
   /********** Medium and smaller devices **********/
   
 @media (max-width: 991px) {
+
+    h2 {
+        padding-bottom: 30px;
+    }
 
     h2, .row {
         text-align: center;
@@ -74,6 +92,10 @@ h2 {
         margin-bottom: 30px;
         margin-bottom: 30px;
     }
+
+    #js h3, #js p {
+        margin: 0 auto;
+    }
   
   }
   
@@ -82,22 +104,38 @@ h2 {
 @media (max-width: 575px) {
 
     .navbar {
-        height: 65px;
+        height: 60px;
     }
   
     .nav-link {
         color: #FFF;
-        font-size: 1rem;
-        padding-top: 3px;
+        font-size: 0.8rem;
+        margin-left: 15px;
+        padding-top: 8px;
     }
     
-    .navbar p {        
+    .navbar p {
         font-size: 18px;
-        padding-top: 12px;
+        margin-left: 10px;    
+        padding: 0;
+        margin-bottom: 3px;
     }
 
     h2 {
+        font-size: 28px;
         margin-top: 110px;
+    }
+
+    #js img {
+        width: 225px;
+        height: 150px;
+    }
+
+    #js h3 {font-size: 28px;}
+
+    #js p {
+        width: 100%;
+        font-size: 18px;
     }
 
   }
